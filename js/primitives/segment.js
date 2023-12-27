@@ -8,7 +8,7 @@
  */
 
 class Segment {
-  constructor(p1,p2){
+  constructor(p1, p2){
     this.p1 = p1;
     this.p2 = p2;
   }
@@ -16,7 +16,7 @@ class Segment {
   /**
    * method that will create lines between points
    *
-   * args: context as canvas that segement will exist
+   * args: context as canvas that segment will exist
    * width as width of line
    * color as color of line
    */
@@ -24,8 +24,8 @@ class Segment {
     context.beginPath();
     context.lineWidth = width;
     context.strokeStyle = color;
-    context.moveTo(p1.x, p1.y);
-    context.lineTo(p2.x, p2.y);
+    context.moveTo(this.p1.x, this.p1.y);
+    context.lineTo(this.p2.x, this.p2.y);
     context.stroke();
   }
 }
