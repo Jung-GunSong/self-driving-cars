@@ -13,6 +13,16 @@ class Point {
   }
 
   /**
+   * method to determine if a point is the same as the
+   * current point
+   *
+   * args: point as Point obj
+   */
+  equals(point){
+    return this.x === point.x && this.y === point.y;
+  }
+
+  /**
    * method to create filled in circles to represent points
    *
    * args: context as canvas where points will appear
